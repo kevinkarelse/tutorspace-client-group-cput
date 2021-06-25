@@ -5,8 +5,13 @@
 =================================================================
 */
 body {
+    position: relative;
     margin: 0em;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgb(46, 148, 68);
 }
 
 header {
@@ -17,13 +22,16 @@ header {
 }
 
 nav {
+    position: sticky;
+    top: 0;
+    
     margin: 0em;
     display: grid;
     grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr;
     text-align: center;
 
     color: white;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 nav a {
@@ -42,27 +50,72 @@ ul {
     margin: 0em;
 }
 
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
 /*
 =================================================================
                         Home Page
 =================================================================
 */
 
+.landing {
+    display: flex;
+    flex-direction: column;
+    margin: 4vh;
+    border-radius: 6px;
+    /*grid-template-rows: 1fr 1fr;*/
+    text-align: center;
+    
+    background-color: black;
+    color: white;
+}
+
+.landing img {
+    width: 100%;
+    border-radius: 6px;
+}
+
 .home-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+    padding: 2%;
+    border-radius: 6px;
+
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
 }
 
+.home-container button {
+    margin-top: 5%;
+}
+
+.home-image {
+    width: 30vw;
+    border-radius: 6px;
+}
 /*
 =================================================================
                         Tutors
 =================================================================
 */
+.tutor-class{
+    background-color: rgb(21, 30, 78);
+}
 
 .tutors-container {
     display: flex;
     /*color:orange*/
+}
+
+.tutor-button {
+    border:none;
+    background-color: rgb(125, 137, 177);
+
 }
 
 /*
@@ -70,9 +123,17 @@ ul {
                         Students
 =================================================================
 */
+.student-class{
+    background-color: rgb(165, 57, 30);
+}
 
 .students-container {
     display: flex;
     /*color: royalblue;*/
+}
+
+.student-button {
+    border: none;
+    background-color: rgb(172, 124, 97);
 }
 
