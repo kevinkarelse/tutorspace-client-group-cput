@@ -39,6 +39,10 @@ nav a {
     color: white;
 }
 
+nav a:hover {
+    color: greenyellow;
+}
+
 .whitespace{
     color: black;
     background-color: black;
@@ -118,6 +122,11 @@ h1 {
 
 }
 
+.tutor-button:hover {
+    cursor: pointer;
+
+}
+
 /*
 =================================================================
                         Students
@@ -135,5 +144,10 @@ h1 {
 .student-button {
     border: none;
     background-color: rgb(172, 124, 97);
+}
+
+.student-button:hover {
+    cursor: pointer;
+
 }
 
