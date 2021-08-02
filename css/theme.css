@@ -1,3 +1,17 @@
+/*
+=================================================================
+                Global color themes
+=================================================================
+*/
+
+:root{
+    --tutorColor: #263da7;
+
+    --studentColor: #c0790f;
+    --mainText: #4ac064;
+    --mainHead: #3a974e;
+    --linkHighlight:rgb(27, 238, 27);
+}
 
 /*
 =================================================================
@@ -7,24 +21,18 @@
 body {
     position: relative;
     margin: 0em;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-
-    background-color: rgb(46, 148, 68);
-}
-
-header {
-    margin: 0em;
-
-    color: white;
-    background-color: black;
+    
+    color: var(--mainText);
 }
 
 nav {
     position: sticky;
     top: 0;
-    
+ 
+    padding: 5vh 0 5vh 0;
     margin: 0em;
     display: grid;
     grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr;
@@ -34,18 +42,21 @@ nav {
     background-color: rgb(0, 0, 0);
 }
 
-nav a {
+a {
     text-decoration: none;
-    color: white;
+    padding: 2px;
+    color: var(--linkHighlight)
 }
 
-nav a:hover {
-    color: greenyellow;
-}
+a:hover {
 
-.whitespace{
-    color: black;
-    background-color: black;
+    padding: 2px;
+    border-radius: 6px;
+    position: relative;
+
+    color:black;
+    background-color: var(--linkHighlight);
+
 }
 
 ul {
@@ -55,8 +66,14 @@ ul {
 }
 
 h1 {
+    color: var(--mainHead);
     margin: 0;
     padding: 0;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 6px;
 }
 
 /*
@@ -71,10 +88,10 @@ h1 {
     margin: 4vh;
     border-radius: 6px;
     /*grid-template-rows: 1fr 1fr;*/
-    text-align: center;
+   /* text-align: center;*/
     
-    background-color: black;
-    color: white;
+    border-color: black;
+    
 }
 
 .landing img {
@@ -82,72 +99,81 @@ h1 {
     border-radius: 6px;
 }
 
-.home-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+/*----------------------------
+    All content Divs
+-----------------------------*/
 
+.content{
+    display: flex;
     padding: 2%;
-    border-radius: 6px;
-
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 3%;
+
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 6px;
+    
 }
 
-.home-container button {
-    margin-top: 5%;
+.flowdown {
+    display: flex;
+    flex-direction: column;
 }
 
-.home-image {
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.three-column {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.md-image {
     width: 30vw;
+    height: 35vh;
     border-radius: 6px;
 }
+
 /*
 =================================================================
                         Tutors
 =================================================================
 */
-.tutor-class{
-    background-color: rgb(21, 30, 78);
+
+.tutor-theme {
+    border-color: var(--tutorColor);
+}
+.tutor-theme button {
+    border-color: var(--tutorColor);
+
+    color: var(--tutorColor);
+    background-color: white;
 }
 
-.tutors-container {
-    display: flex;
-    /*color:orange*/
+.tutor-theme h1 {
+    color: var(--tutorColor);
 }
-
-.tutor-button {
-    border:none;
-    background-color: rgb(125, 137, 177);
-
-}
-
-.tutor-button:hover {
-    cursor: pointer;
-
-}
-
 /*
 =================================================================
                         Students
 =================================================================
 */
-.student-class{
-    background-color: rgb(165, 57, 30);
+
+.student-theme {
+    border-color: var(--studentColor);
+}
+.student-theme button {
+    border-color: var(--studentColor);
+
+    color: var(--studentColor);
+    background-color: white;
+}
+.student-theme h1 {
+    color: var(--studentColor);
 }
 
-.students-container {
-    display: flex;
-    /*color: royalblue;*/
-}
-
-.student-button {
-    border: none;
-    background-color: rgb(172, 124, 97);
-}
-
-.student-button:hover {
-    cursor: pointer;
-
-}
 
