@@ -1,0 +1,35 @@
+
+
+/*
+    ==== Header ====
+*/
+
+.header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header div {
+    background-color: cornflowerblue;
+}
+
+/*
+    ==== Body ====
+*/
+
+.landing {
+    text-align: center;
+}
+
+.postsTable {
+    display: flex;
+    flex-direction: column;
+    
+    margin-left: 15%;
+    margin-right: 15%;
+
+    background-color: rgb(209, 174, 162);
+}
+
