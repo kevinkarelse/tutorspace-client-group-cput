@@ -13,7 +13,19 @@
 
 .header div {
     background-color: cornflowerblue;
+    width: 990px;
+    height: 100px;
+
 }
+#image{
+    display: inline-block;
+    position: relative;
+    padding-block: 10px 5px 1px 1px;
+}
+
+/*
+    ==== Navigation ====
+*/
 
 /*
     ==== Body ====
@@ -24,12 +36,25 @@
 }
 
 .postsTable {
-    display: flex;
-    flex-direction: column;
+    border-collapse: collapse;
     
     margin-left: 15%;
     margin-right: 15%;
 
+    
+    border: 1px solid black;
+    
+
+
+}
+th{
     background-color: rgb(209, 174, 162);
+}
+th , td{
+    text-align: center;
+    padding: 15px;
+    border-left:1px solid black;
+
+
 }
 
