@@ -3,9 +3,11 @@
 =============================*/
 
 :root {
-    /* colours */
-    --dominant: rgb(6, 56, 44);    
-    --dominant_text: rgb(72, 122, 83);   
+    /* colours */    
+    --dominant: rgb(35, 182, 101); 
+    --dominant_shadow: rgb(6, 56, 44);
+    --dominant_light: rgb(107, 184, 148);   
+
     --accent_one: rgb(38, 86, 148);
     --accent_one_text: rgb(38, 86, 148);
     --accent_two: rgb(170, 95, 34); 
@@ -26,10 +28,18 @@
 
 body {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0;
 
     font-family: var(--main__font);
+    min-height: 100vh;
+}
+
+@media (min-width:800px){
+    body {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 /*============================== 
@@ -38,8 +48,29 @@ body {
 
 .nav {
     display: flex;
-    flex-direction: column;
-    width: 3vw;   
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 1vw 0 1vw;
+
+    background-color: var(--dominant);
+}
+
+.nav__button {
+    background-color: var(--dominant);
+    border: none;
+    color: whitesmoke;
+}
+
+.nav__button:hover {
+    background-color: var(--dominant_shadow);
+}
+
+@media (min-width:800px){
+    .nav {
+        display: flex;
+        flex-direction: column;
+        width: 15vw;
+    }
 }
 
 /*============================== 
@@ -48,11 +79,15 @@ body {
 
 
 #content {
-    background-color: brown;
-    width: 97vw;
+    width: 100vw;
 }
 
 /* =========== Header =========== */
+
+.header {
+    background-color: black;
+    color: whitesmoke;
+}
 
 /* =========== Landing =========== */
 
