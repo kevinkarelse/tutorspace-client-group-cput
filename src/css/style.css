@@ -1,0 +1,62 @@
+/*=============================
+*          Attributes
+=============================*/
+
+:root {
+    /* colours */
+    --dominant: rgb(6, 56, 44);    
+    --dominant_text: rgb(72, 122, 83);   
+    --accent_one: rgb(38, 86, 148);
+    --accent_one_text: rgb(38, 86, 148);
+    --accent_two: rgb(170, 95, 34); 
+    --accent_two_text: rgb(170, 95, 34);  
+    
+    --link: rgb(10, 200, 50);
+    
+    /* fonts */
+    --main__font: Tahoma, sans-serif;
+    
+    /* font-sizes */
+
+}
+
+/*=============================
+*             Body
+=============================*/
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+
+    font-family: var(--main__font);
+}
+
+/*============================== 
+*           Nav
+==============================*/
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    width: 3vw;   
+}
+
+/*============================== 
+*           Content
+==============================*/
+
+
+#content {
+    background-color: brown;
+    width: 97vw;
+}
+
+/* =========== Header =========== */
+
+/* =========== Landing =========== */
+
+/* =========== About =========== */
+
+/* =========== Contact =========== */
+
