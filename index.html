@@ -6,57 +6,76 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" type="text/css" href="src/style.css">
+        <link rel="stylesheet" type="text/css" href="src/css/style.css">
 
         <title>Tutorspace</title>
     </head>
 
     <body>
-        <header>
-            <div class="header">
-                <div class="image" id="logo"><img src="l2.png" style="width:50%; height:100%;"></div>
-                <div>Tutorspace</div>
-                <div>Search</div>
-            </div>
-            <nav>
-                <button>login / logout</button>
-                <button>Administration (only displayed if tutor = true)</button>
-                <button>About</button>
-            </nav>
+        <header class="header" id="heading">
+            <button>[|TS|]</button>
+            All Tutors and Listings
         </header>
 
-        <div class="landing">
-            <header>
-                <h1>Posts</h1>
-            </header>
-            <table class="postsTable">
-                    <tr>
-                        <th>Major</th>
-                        <th>Subject</th>
-                        <th>Topic</th>
-                        <th>Tutor</th>
-                    </tr>
-                    <tr>
-                        <td>Computer Science</td>
-                        <td>Data Stuctures and Algorithms</td>
-                        <td>Trees and Graphs</td>
-                        <td>Prof Moodley<br><button>Contact Details</button></td>
-                    </tr>
+        <br><br>
 
-                    <tr>
-                        <td>Accounting</td>
-                        <td>Cost Management</td>
-                        <td>Statistics</td>
-                        <td>Prof Adams <br><button>Contact Details</button></td>
-                    </tr>
-                    <tr>
-                        <td>Application Development</td>
-                        <td>Information Systems</td>
-                        <td>Normalization</td>
-                        <td>Mr Jackson <br><button>Contact Details</button></td>
-                    </tr>
-            </table>
-        </div>
+        <section>
+            <nav class ="nav">
+                <button>Landing</button>
+                <button>About</button>
+                <button>Contact</button>
+            </nav>
+
+            <br><br>
+
+            <div id="content">
+
+                <section class="landing" id="landing">
+                    <table>
+                        <thead>
+                            <td>POST</td>
+                            <td>TUTORS</td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Computer Science</td>
+                                <td>Sibulele</td>
+                            </tr>
+                            <tr>
+                                <td>Marketing</td>
+                                <td>Jackson</td>
+                            </tr>
+                            <tr>
+                                <td>Architecture</td>
+                                <td>Samantha</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <br><br>
+
+                <section class="about" id="about">
+                    ABOUT US<br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, culpa. <br>
+                    Provident facilis eius tempore quo ea ad, impedit fuga quisquam, porro <br>
+                    iure doloribus sapiente ex quas tenetur doloremque maxime necessitatibus.<br>
+                </section>
+
+                <br><br>
+
+                <section class="contact" id="contact">
+                    <form>
+                        CONTACT US<br>
+                        <input type="text"><br>
+                        <input type="text"><br>
+                        <input type="text"><br>
+                        <input type="submit">
+                    </form>
+                </section>
+
+            </div>
+        </section>
     </body>
 
 </html>
