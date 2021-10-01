@@ -1,0 +1,33 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-size: var(--font__size__main);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*
+============ Header =============
+*/
+
+/*
+============ Content =============
+*/
+
+/*
+============ Nav =============
+*/
+
+/*
+============ Side =============
+*/
+
+/*
+============ Footer =============
+*/

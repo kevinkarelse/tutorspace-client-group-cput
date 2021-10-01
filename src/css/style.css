@@ -89,6 +89,9 @@ body {
 
 @media (min-width:800px){
     .nav {
+        position: sticky;
+        top: 1px;
+
         display: flex;
         flex-direction: column;
         width: 15vw;
@@ -131,6 +134,9 @@ body {
 ==============================*/
 
 .tabs__content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     padding: 1rem;
     background-color: rgb(230, 230, 230);
 }
