@@ -19,17 +19,49 @@
     --main__font: Tahoma, sans-serif;
     
     /* font-sizes */
+    --font__size__main: 1rem;
+    --font__size__sub: 1.75rem;
+    --font__size__heading: 2.5rem
 
+}
+
+@media (min-width:800px){
+    :root {
+
+        --font__size__main: 1.25rem;
+        --font__size__sub: 2.25rem;
+        --font__size__heading: 3.25rem
+    }
 }
 
 /*=============================
 *             Body
 =============================*/
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-size: var(--font__size__main);
+}
+
+/*----- Headings   -----*/
+
+h1 {
+    font-size: var(--font__size__heading);
+}
+h2 {
+    font-size: var(--font__size__sub);
+}
+
+/*  ----- body  -----*/
+
 body {
     display: flex;
     flex-direction: column;
     margin: 0;
+
+    text-align:center;
 
     font-family: var(--main__font);
     min-height: 100vh;
@@ -50,10 +82,21 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0 1vw 0 1vw;
-
+    padding: 0 vw 0 1vw;
     background-color: var(--dominant);
+    order:2;
 }
+
+@media (min-width:800px){
+    .nav {
+        display: flex;
+        flex-direction: column;
+        width: 15vw;
+        order:1;
+    }
+}
+
+/*  -----   nav button  -----*/
 
 .nav__button {
     background-color: var(--dominant);
@@ -65,21 +108,13 @@ body {
     background-color: var(--dominant_shadow);
 }
 
-@media (min-width:800px){
-    .nav {
-        display: flex;
-        flex-direction: column;
-        width: 15vw;
-    }
-}
-
 /*============================== 
 *           Content
 ==============================*/
 
-
 #content {
     width: 100vw;
+    order: 1;
 }
 
 /* =========== Header =========== */
@@ -87,6 +122,16 @@ body {
 .header {
     background-color: black;
     color: whitesmoke;
+    position: sticky;
+    min-height: 10vh;
+}
+
+/*============================== 
+*           Tabs__Content
+==============================*/
+
+.tabs__content {
+    padding: 1rem;
 }
 
 /* =========== Landing =========== */
@@ -94,4 +139,3 @@ body {
 /* =========== About =========== */
 
 /* =========== Contact =========== */
-

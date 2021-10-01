@@ -14,19 +14,22 @@
     <body>
 
         <nav class ="nav">
-            <button class="logo">Landing</button>
+            <button class="nav__button">All Posts</button>
             <button class="nav__button">Make A Post</button>
             <button class="nav__button">About</button>
             <button class="nav__button">Contact</button>
         </nav>
 
         <section id="content">
-                <header class="header" id="heading">
-                    <button>[|TS|]</button>
-                    All Tutors and Listings
-                </header>
+
+            <header class="header" id="heading">
+                <button>[|TS|]</button>
+                All Tutors and Listings
+            </header>
+
+            <div class="tabs__content" id="tabs__content">       
                 
-                <section class="landing" id="landing">
+                <section class="tab landing" id="landing">
                     <table>
                         <thead>
                             <td>POST</td>
@@ -51,7 +54,7 @@
 
                 <br><br>
 
-                <section class="about" id="about">
+                <section class="tab about" id="about">
                     ABOUT US<br>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, culpa. <br>
                     Provident facilis eius tempore quo ea ad, impedit fuga quisquam, porro <br>
@@ -60,7 +63,7 @@
 
                 <br><br>
 
-                <section class="contact" id="contact">
+                <section class="tab contact" id="contact">
                     <form>
                         CONTACT US<br>
                         <input type="text"><br>
@@ -69,6 +72,7 @@
                         <input type="submit">
                     </form>
                 </section>
+            </div>
         </section>
 
     </body>
