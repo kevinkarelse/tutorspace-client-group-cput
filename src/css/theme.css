@@ -121,7 +121,12 @@ h1, h2,h3 {margin: 0;}
 
 .nav__button {
     background-color: transparent;
+    color: whitesmoke;
     border-style: none;
+}
+
+.nav__button:hover {
+    background-color: rgba(11, 11, 11);
 }
 
 
