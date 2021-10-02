@@ -12,8 +12,8 @@
     --link: rgb(10, 200, 50);
     
     /* fonts */
-    --main__font: Tahoma, sans-serif;
-    --title__font: Verdana, sans-serif;
+    --main__font: Verdana, sans-serif;
+    --title__font: Tahoma, sans-serif;
     --link__font: Consolas, monospace;
 
     /* font-sizes */
@@ -60,8 +60,9 @@ html {
 /*
 ============ Container =============
 */
-body {min-height: 100%;}
-
+body {
+    height: 100%;
+}
 
 
 /*
@@ -80,7 +81,7 @@ body {min-height: 100%;}
 }
 
 .sub__header {
-    background-color: rgb(40, 40, 40);
+    background-color: rgb(30, 30, 30);
     color: whitesmoke;
     text-align: center;
 }
@@ -90,19 +91,60 @@ body {min-height: 100%;}
 */
 .content {
     height: 100%;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 2rem 0 1rem 0;
 }
 
+.tab {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+/*--- Landing ---*/
+
+
+/*--- Create ---*/
+    .create__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .create__form input {
+        margin-top: 2rem;
+    }
+
+    .create__form__actions {
+        display: flex;
+        justify-content: space-around;
+    }
+
+
+/*--- About ---*/
+/*--- Contact ---*/
 
 
 /*
 ============ Footer =============
 */
 .footer {
-    background-color: var(--dominant);
     position: sticky;
     bottom: 0;
-    margin-top: auto;
+    margin-top: 1rem;
+    padding: 0;
     display: flex;
     justify-content: space-around;
+    height: 2rem;
+
+    background-color: var(--dominant);
+}
+
+.footer__button {
+    background-color: var(--dominant);
+    color: whitesmoke;
+    border: none;
+    flex-grow: 1;
+}
+
+.footer__button:hover {
+    background-color: var(--dominant_shadow);
 }
