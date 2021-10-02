@@ -91,12 +91,10 @@ body {
 */
 .content {
     height: 100%;
-    padding: 2rem 0 1rem 0;
 }
 
 .tab {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
 }
 
 
@@ -120,6 +118,18 @@ body {
 
 
 /*--- About ---*/
+    #about {
+        display: flex;
+        flex-direction: column;
+    }
+    .about__team {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about__app {
+        margin-top: 2rem;
+    }
 /*--- Contact ---*/
 
 
