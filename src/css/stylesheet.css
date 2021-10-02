@@ -100,5 +100,9 @@ body {min-height: 100%;}
 */
 .footer {
     background-color: var(--dominant);
+    position: sticky;
+    bottom: 0;
     margin-top: auto;
+    display: flex;
+    justify-content: space-around;
 }
