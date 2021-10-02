@@ -1,0 +1,104 @@
+:root {
+    /* colours */    
+    --dominant: rgb(35, 182, 101); 
+    --dominant_shadow: rgb(6, 56, 44);
+    --dominant_light: rgb(107, 184, 148);   
+
+    --accent_one: rgb(38, 86, 148);
+    --accent_one_text: rgb(38, 86, 148);
+    --accent_two: rgb(170, 95, 34); 
+    --accent_two_text: rgb(170, 95, 34);  
+    
+    --link: rgb(10, 200, 50);
+    
+    /* fonts */
+    --main__font: Tahoma, sans-serif;
+    --title__font: Verdana, sans-serif;
+    --link__font: Consolas, monospace;
+
+    /* font-sizes */
+    --font__size__main: 1rem;
+    --font__size__sub: 1.5rem;
+    --font__size__heading: 2.5rem
+
+}
+/* ========= End of ROOT ========== */
+
+
+@media (min-width:800px){
+    :root {
+
+        --font__size__main: 1.25rem;
+        --font__size__sub: 2rem;
+        --font__size__heading: 3rem;
+    }
+}
+
+/*
+============ SUPER =============
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    font-size: var(--font__size__main);
+    font-family: var(--main__font);
+}
+
+h1 {font-size: var(--font__size__heading);}
+h2 {font-size: var(--font__size__sub);}
+
+h1, h2 {font-family: var(--title__font);}
+
+html {
+    height: 100%;
+}
+
+
+/*
+============ Container =============
+*/
+body {min-height: 100%;}
+
+
+
+/*
+============ Header =============
+*/
+.header {
+    background-color: rgb(20, 20, 20);
+    color: whitesmoke;
+    text-align: center;
+}
+
+#logo {
+    position: absolute;
+    left: 0;
+    top: 2vh;
+}
+
+.sub__header {
+    background-color: rgb(40, 40, 40);
+    color: whitesmoke;
+    text-align: center;
+}
+
+/*
+============ Content =============
+*/
+.content {
+    height: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+
+
+/*
+============ Footer =============
+*/
+.footer {
+    background-color: var(--dominant);
+    margin-top: auto;
+}
