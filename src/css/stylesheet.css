@@ -131,7 +131,14 @@ body {
         margin-top: 2rem;
     }
 /*--- Contact ---*/
+    .contact__form {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .contact__form input {
+        margin-top: 2rem;
+    }
 
 /*
 ============ Footer =============
