@@ -79,6 +79,17 @@ body {
     position: absolute;
     left: 0;
     top: 2vh;
+    font-family: var(--link__font);
+
+    background-color: black;
+    color: whitesmoke;
+    border: none;
+
+}
+
+#logo:hover {
+    color: lime;
+    cursor: pointer;
 }
 
 .sub__header {
@@ -126,11 +137,19 @@ body {
     .about__team {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         max-width: 100%;
     }
 
     .about__app {
         margin-top: 2rem;
+    }
+
+    .at__card {
+        background-color: var(--accent_one);
+    }
+    .at__card:nth-child(even) {
+        background-color: var(--accent_two);
     }
 /*--- Contact ---*/
     .contact__form {
@@ -166,4 +185,5 @@ body {
 
 .footer__button:hover {
     background-color: var(--dominant_shadow);
+    cursor: pointer;
 }
