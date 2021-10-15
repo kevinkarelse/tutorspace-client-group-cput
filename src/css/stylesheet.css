@@ -191,3 +191,30 @@ body {
     background-color: var(--dominant_shadow);
     cursor: pointer;
 }
+
+.boxContainer {
+  border:  5px solid black;
+           margin: auto;
+           width: 95%;
+           padding: 60px;
+           display: flex;
+
+}
+
+div.formatLeft {
+    display:grid;
+    grid-template-columns: max-content max-content;
+    grid-gap:50px;
+
+}
+div.formatLeft label       { text-align:right; }
+div.formatLeft label:after { content: ":"; }
+
+div.formatRight {
+    display:grid;
+    grid-template-columns: max-content max-content;
+    grid-gap:50px;
+
+}
+div.formatRight label       { text-align:left; }
+div.formatRight label:after { content: ":"; }
