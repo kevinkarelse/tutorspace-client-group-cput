@@ -23,56 +23,79 @@
         *--------------Landing - Table to view posts--------------
         *-->
             <div class="tab active__tab" id="home">
-                Tutor &nbsp|&nbsp Subject &nbsp|&nbsp Cost<br>
-            <br>
-                John &nbsp|&nbsp C.S &nbsp|&nbsp R100<br>
-            <br>
-                Sue &nbsp|&nbsp BCom &nbsp|&nbsp R75<br>
-            <br>
-                Kate &nbsp|&nbsp Law &nbsp|&nbsp R80<br>
-            <br>
+                <table>
+                    <tr>
+                      <th>Tutor</th>
+                      <th>Subject</th>
+                      <th>Cost</th>
+                    </tr>
+                    <tr>
+                      <td>John Hendricks</td>
+                      <td>Law</td>
+                      <td>R190</td>
+                    </tr>
+                    <tr>
+                      <td>Felicia Fibi</td>
+                      <td>Economics</td>
+                      <td>R352</td>
+                    </tr>
+                    <tr>
+                      <td>Sue Adams</td>
+                      <td>Psychology</td>
+                      <td>R150</td>
+                    </tr>
+                    <tr>
+                      <td>Kate Groenewald</td>
+                      <td>Information and Technology</td>
+                      <td>R210</td>
+                    </tr>
+                    <tr>
+                      <td>Daniel Peters</td>
+                      <td>Education</td>
+                      <td>R260</td>
+                    </tr>
+                    <tr>
+                      <td>Fikile Mthethwa</td>
+                      <td>Science</td>
+                      <td>R170</td>
+                    </tr>
+                  </table>
             </div>
 
         <!--*
         *-----------------Create Tutor Post---------------
         *-->
 
-        <br>
-        <div style="text-align:center">
-    <!--*
-    *-------------------Form--------------
-    *-->
-        <form>
-            <label>Student Number: </label>
-            <input type="text" id="inputStudentNumber" name="studentNumber">
-            <input type="submit" id="createTutor" value="Create">
+            <div class="tab" id="create">
+                <form>
+                    <label>Student Number: </label>
+                    <input type="text" id="inputStudentNumber" name="studentNumber">
+                    <input type="submit" id="createTutor" value="Create">
+                    <br>
+                    <br>
 
-            <br>
-            <br>
-            <br>
+                    <div class="boxContainer">
 
-    <!--------------Box Container---------->
-                <div class="boxContainer">
-                    <div class="formatLeft">
-                        <label>First Name</label>
-                        <input type="text" id="inputFirstName" name="firstName">
-                        <label>Last Name</label>
-                        <input type="text" id="inputLastName" name="lastName">
-                        <label>Email</label>
-                        <input type="text" id="inputEmail" name="email">
+                        <div class="formatLeft">
+                            <label>First Name</label>
+                            <input type="text" id="inputFirstName" name="firstName">
+                            <label>Last Name</label>
+                            <input type="text" id="inputLastName" name="lastName">
+                            <label>Email</label>
+                            <input type="text" id="inputEmail" name="email">
+                        </div>
+
+                        <div class="formatRight">
+                            <label>&nbsp;&nbsp;Institution</label>
+                            <input type="text" id="inputInstitution" name="institution">
+                            <label>&nbsp;&nbsp;Major</label>
+                            <input type="textx" id="inputMajor" name="major">
+                            <label>&nbsp;&nbsp;Tutoring Subject</label>
+                            <input type="text" id="inputTutoringSubject" name="tutoringSubject">
+                        </div>
                     </div>
-
-                    <div class="formatRight">
-                        <label>&nbsp;&nbsp;Institution</label>
-                        <input type="text" id="inputInstitution" name="institution">
-                        <label>&nbsp;&nbsp;Major</label>
-                        <input type="textx" id="inputMajor" name="major">
-                        <label>&nbsp;&nbsp;Tutoring Subject</label>
-                        <input type="text" id="inputTutoringSubject" name="tutoringSubject">
-                    </div>
-                </div>
-            </form>
-        </div>
+                </form>
+            </div>
 
             <!--<div class="tab" id="create">
                 <form class="create__form form">
